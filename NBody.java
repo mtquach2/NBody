@@ -68,7 +68,7 @@ public class NBody extends JPanel implements ActionListener{
 
         List<Bodies> temp_list = null;
         double temp_scale = 0;
-        File input = new File("nbody_input.txt");
+        File input = new File(args[0]);
         try{
             Scanner scan = new Scanner(input);
             String type = scan.nextLine();
